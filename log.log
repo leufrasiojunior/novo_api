@@ -1,1 +1,35 @@
-[2024-05-02T22:03:56.641Z] "Conexão ao banco de dados estabelecida"
+[2024-05-04T22:05:31.047Z] {"error":500,"message":"Access denied for user 'speed'@'192.168.31.33' (using password: YES)"}
+[2024-05-04T22:05:39.982Z] {"error":500,"message":"Internal Server Error. Check configs"}
+[2024-05-04T22:05:46.856Z] {"error":500,"message":"Internal Server Error. Check configs"}
+[2024-05-04T22:06:15.192Z] {"error":500,"message":"Internal Server Error. Check configs"}
+[2024-05-04T22:06:20.063Z] {"error":500,"message":"Internal Server Error. Check configs"}
+[2024-05-04T22:06:20.956Z] {"error":500,"message":"Internal Server Error. Check configs"}
+[2024-05-04T22:06:25.629Z] {"error":500,"message":"Internal Server Error. Check configs"}
+[2024-05-04T22:07:49.482Z] {"error":500,"message":"Database name error. Check name"}
+[2024-05-04T22:08:00.428Z] {"error":500,"message":"Database name error. Check name"}
+[2024-05-04T22:08:11.557Z] Conexão ao banco de dados estabelecida
+[2024-05-04T22:08:22.707Z] Conexão ao banco de dados estabelecida
+[2024-05-04T22:12:39.800Z] GET /list?pageSize=15&page=1 200 2171.102 ms - -
+[2024-05-04T22:12:39.830Z] GET /list?pageSize=15&page=1 304 20.758 ms - -
+[2024-05-04T22:12:50.377Z] GET /specified/12314 200 7.526 ms - 861
+[2024-05-04T22:16:06.389Z] GET /list?pageSize=15&page=1 304 60.445 ms - -
+[2024-05-04T22:16:06.416Z] GET /list?pageSize=15&page=1 304 15.676 ms - -
+[2024-05-04T22:16:07.488Z] GET /specified/12314 304 5.520 ms - -
+[2024-05-04T22:20:52.316Z] GET /list?pageSize=15&page=1 200 61.506 ms - -
+[2024-05-04T22:20:52.317Z] GET /list?pageSize=15&page=1 200 111.111 ms - -
+[2024-05-04T22:20:53.346Z] GET /specified/12315 200 5.812 ms - 830
+[2024-05-04T22:27:37.045Z] GET /specified/12315 304 6.667 ms - -
+[2024-05-04T22:27:39.304Z] GET /specified/12309 200 5.712 ms - 872
+[2024-05-04T22:27:41.233Z] GET /specified/12312 200 4.794 ms - 862
+[2024-05-04T22:40:13.684Z] GET /list?pageSize=15&page=1 200 72.766 ms - -
+[2024-05-04T22:40:13.749Z] GET /list?pageSize=15&page=1 304 46.527 ms - -
+[2024-05-04T22:40:17.198Z] GET /specified/12316 200 4.232 ms - 825
+[2024-05-04T22:40:32.597Z] GET /list?pageSize=15&page=1 200 26.568 ms - -
+[2024-05-04T22:40:32.634Z] GET /list?pageSize=15&page=1 304 25.204 ms - -
+[2024-05-04T22:40:42.716Z] GET /specified/12317 200 4.199 ms - 857
+[2024-05-04T22:41:16.965Z] GET /list?pageSize=15&page=1 304 20.089 ms - -
+[2024-05-04T22:41:16.987Z] GET /list?pageSize=15&page=1 304 15.532 ms - -
+[2024-05-04T22:41:36.432Z] GET /specified/12317 304 5.420 ms - -
+[2024-05-04T22:43:39.160Z] GET /list?pageSize=15&page=1 304 20.299 ms - -
+[2024-05-04T22:43:39.186Z] GET /list?pageSize=15&page=1 304 20.234 ms - -
+[2024-05-04T22:44:48.968Z] GET /specified/12317 304 5.968 ms - -
