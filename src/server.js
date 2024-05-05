@@ -21,6 +21,7 @@ app.use(cors({
   methods: 'GET', // Permitir apenas o método GET
   optionsSuccessStatus: 200 // Retornar o status 200 para solicitações OPTIONS
 }));
+
 app.use(compression());
 
 app.use(morgan('dev', {

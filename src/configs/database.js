@@ -40,6 +40,7 @@ function handleConnectionError(err) {
       const errorMessage = { error: 500, message: err};
       console.error(errorMessage)
       writeToLog(JSON.stringify(errorMessage));
+      createConnection();
     } 
     else if (err.code ==="ER_DBACCESS_DENIED_ERROR"){
       const errorMessage = { error: 500, message: "Database name error. Check name" };
