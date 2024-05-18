@@ -3,7 +3,6 @@ const fs = require('fs');
 const dotenv = require('dotenv');
 dotenv.config();
 
-// Configuração da conexão com o banco de dados
 let connection;
 
 function createConnection() {
@@ -14,7 +13,6 @@ function createConnection() {
     database: process.env.DB_NAME
   });
 
-  // Conecta ao banco de dados
   connection.connect((err) => {
     if (err) {
       handleConnectionError(err);
@@ -24,7 +22,6 @@ function createConnection() {
     writeToLog("Conexão ao banco de dados estabelecida");
   });
 
-  // Define o tratamento de erro de conexão
   connection.on('error', (err) => {
     handleConnectionError(err);
   });
@@ -51,12 +48,9 @@ function handleConnectionError(err) {
       console.error(errorMessage)
       writeToLog(JSON.stringify(errorMessage));
     }
-    // Recria a conexão após 10 minutos
-    setTimeout(createConnection, 10 * 60 * 1000); // 10 minutos em milissegundos
+    setTimeout(createConnection, 10 * 60 * 1000);
   }
 }
-
-// Função para fazer consultas ao banco de dados
 function query(sql) {
   return new Promise((resolve, reject) => {
     connection.query(sql, (error, results, fields) => {
@@ -78,8 +72,6 @@ function query(sql) {
     });
   });
 }
-
-// Função para escrever no arquivo de log
 function writeToLog(data) {
   const logMessage = `[${new Date().toISOString()}] ${data}\n`;
   console.log( `[${new Date().toISOString()}] ${data}\n`)
@@ -88,7 +80,6 @@ function writeToLog(data) {
   });
 }
 
-// Inicialmente cria a conexão
 createConnection();
 
 module.exports = { query, writeToLog };

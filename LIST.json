@@ -1,0 +1,13 @@
+{
+    "id": "1", * 
+    "server.id": "1",
+    "server.host": "Mega",
+    "download.bandwidth": 123, * 
+    "upload.bandwidth": 123, * 
+    "ping.latency": 123, * 
+    "Status": 123, * 
+    "timestamp": "May 18, 2024 12:30:01", * 
+    "interface.internalIp": 1,
+    "packetLoss": 1,
+    "scheduled": 1 *
+}

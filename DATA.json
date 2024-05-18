@@ -1,0 +1,56 @@
+{
+    "id": "1 ",
+    "type": "result",
+    "timestamp": "2024-05-18T15:30:36Z",
+    "ping": {
+        "jitter": 0.665,
+        "latency": 4.904,
+        "low": 4.404,
+        "high": 6.611
+    },
+    "download": {
+        "bandwidth": 68405123,
+        "bytes": 939891060,
+        "elapsed": 15013,
+        "latency": {
+            "iqm": 12.916,
+            "low": 4.264,
+            "high": 61.082,
+            "jitter": 6.608
+        }
+    },
+    "upload": {
+        "bandwidth": 43613079,
+        "bytes": 630160573,
+        "elapsed": 14976,
+        "latency": {
+            "iqm": 10.226,
+            "low": 3.262,
+            "high": 227.337,
+            "jitter": 9.542
+        }
+    },
+    "packetLoss": 0.3472222222222222,
+    "isp": "Vivo",
+    "interface": {
+        "internalIp": "172.31.0.2",
+        "name": "eth0",
+        "macAddr": "02:42:AC:1F:00:02",
+        "isVpn": false,
+        "externalIp": "201.27.65.208"
+    },
+    "server": {
+        "id": 21420,
+        "host": "speedtest.megaconexao.inf.br",
+        "port": 8080,
+        "name": "Mega Conex\u00e3o Telecom",
+        "location": "Carapicu\u00edba",
+        "country": "Brazil",
+        "ip": "138.0.98.26"
+    },
+    "result": {
+        "id": "b5f0187f-c622-49f3-b823-d77e0adfbc04",
+        "url": "https:\/\/www.speedtest.net\/result\/c\/b5f0187f-c622-49f3-b823-d77e0adfbc04",
+        "persisted": true
+    }
+}

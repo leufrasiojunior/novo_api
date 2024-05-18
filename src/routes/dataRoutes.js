@@ -9,7 +9,6 @@ router.get('/:id', async (req, res) => {
         const id = req.params.id;
         const result = await database.query(`SELECT DATA FROM results WHERE id = ${id}`);
         if (result.length > 0) {
-          // Parseando a string JSON para um objeto JavaScript
           const data = JSON.parse(result[0].DATA);
           res.send(data);
         } else {
