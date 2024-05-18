@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const database = require('../configs/database.js'); // supondo que você tenha um módulo para lidar com o banco de dados
-const {writeToLog} = require('../configs/database.js');
+const database = require('../configs/database.js');
+
 
 router.get('/downloads', async (req, res) => {
     try {

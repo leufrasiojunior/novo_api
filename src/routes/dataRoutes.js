@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const database = require('../configs/database'); // supondo que você tenha um módulo para lidar com o banco de dados
+const database = require('../configs/database');
 const {writeToLog} = require('../configs/database.js');
 
 

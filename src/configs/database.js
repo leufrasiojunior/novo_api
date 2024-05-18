@@ -82,6 +82,7 @@ function query(sql) {
 // Função para escrever no arquivo de log
 function writeToLog(data) {
   const logMessage = `[${new Date().toISOString()}] ${data}\n`;
+  console.log( `[${new Date().toISOString()}] ${data}\n`)
   fs.appendFile('log.log', logMessage, (err) => {
     if (err) console.error('Erro ao escrever no arquivo de log:', err);
   });
