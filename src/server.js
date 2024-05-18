@@ -30,7 +30,7 @@ app.use(morgan('dev', {
 }));
 
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
-app.use('/specified', dataRoutes);
+app.use('/specified', dataRoutes); // Lembrar de Alterar
 app.use('/', chartRoute);
 
 

@@ -4658,3 +4658,10 @@
 [2024-05-18T15:08:52.394Z] GET /dados?horas=1 404 3.631 ms - 144
 [2024-05-18T15:08:57.588Z] GET /dados?inicio=2024-05-11&fim=2024-05-11 404 0.604 ms - 144
 [2024-05-18T15:09:00.756Z] GET /data?inicio=2024-05-11&fim=2024-05-11 200 409.575 ms - -
+[2024-05-18T15:10:16.139Z] Conexão ao banco de dados estabelecida
+[2024-05-18T15:10:25.041Z] Conexão ao banco de dados estabelecida
+[2024-05-18T15:10:26.428Z] Conexão ao banco de dados estabelecida
+[2024-05-18T15:10:29.491Z] Conexão ao banco de dados estabelecida
+[2024-05-18T15:10:31.364Z] Conexão ao banco de dados estabelecida
+[2024-05-18T15:10:34.358Z] Conexão ao banco de dados estabelecida
+[2024-05-18T15:11:18.550Z] Conexão ao banco de dados estabelecida
