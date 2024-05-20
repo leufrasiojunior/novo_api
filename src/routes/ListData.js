@@ -19,23 +19,21 @@ router.get('/list', async (req, res) => {
 function cleanResults(results) {
     return results.map(row => {
         const jsonData = JSON.parse(row.DATA);
-        if (!jsonData) return null;
-        const { timestamp, ping, download, server, upload, interface } = jsonData;
-        if (!timestamp || !ping || !download || !server || !upload || !interface) return null;
+        // Return all fields, assigning null if they don't exist
         return {
             id: row.id,
-            serverid: server.id,
-            serverhost: server.host,
-            download: download.bandwidth,
-            upload: upload.bandwidth,
-            ping: ping.latency,
+            serverid: jsonData?.server?.id || null,
+            serverhost: jsonData?.server?.host || null,
+            download: jsonData?.download?.bandwidth || null,
+            upload: jsonData?.upload?.bandwidth || null,
+            ping: jsonData?.ping?.latency || null,
             status: row.status,
-            timestamp: timestamp,
-            ipaddress: interface.internalIp,
-            packetloss: jsonData.packetLoss,
+            timestamp: jsonData?.timestamp || null,
+            ipaddress: jsonData?.interface?.internalIp || null,
+            packetloss: jsonData?.packetLoss || null,
             scheduled: row.scheduled,
         };
-    }).filter(result => result !== null); // Remover resultados nulos
+    });
 }
 
 module.exports = router;
