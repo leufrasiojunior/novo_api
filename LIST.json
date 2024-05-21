@@ -1,0 +1,5 @@
+{
+    "server.host": "Mega",
+    "interface.internalIp": 1,
+    "packetLoss": 1,
+}

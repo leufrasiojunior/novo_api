@@ -2,12 +2,15 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const dataRoutes = require('./routes/dataRoutes.js');
+const avarages = require('./routes/averagesRoute.js');
 const chartRoute = require('./routes/chartRoute.js');
+const allresults = require('./routes/Allresults.js');
 const {writeToLog} = require('./configs/database.js');
+const list = require('./routes/ListData.js');
 const morgan = require('morgan');
 const swaggerUI = require('swagger-ui-express');
 const swaggerDocument = require('./swagger.json');
-const compression = require('compression'); // Importar o módulo de compressão
+const compression = require('compression');
 
 
 app.use(cors({
@@ -21,17 +24,15 @@ app.use(compression());
 app.use(morgan('dev', {
   stream: {
     write: (message) => {
-      // Função para remover as cores
       const cleanMessage = message.replace(/\x1b\[\d+m/g, '');
-      // Envia a mensagem limpa para a função writeToLog
       writeToLog(cleanMessage.trim());
     }
   }
 }));
 
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
-app.use('/specified', dataRoutes);
-app.use('/', chartRoute);
+app.use('/specified', dataRoutes); // Lembrar de Alterar
+app.use('/', chartRoute, list, avarages, allresults);
 
 
 

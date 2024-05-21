@@ -1,0 +1,54 @@
+{
+    "type": "result",
+    "timestamp": "2024-05-18T16:10:29Z",
+    "ping": {
+        "jitter": 0.346,
+        "latency": 4.549,
+        "low": 4.467,
+        "high": 5.052
+    },
+    "download": {
+        "bandwidth": 78885723,
+        "bytes": 813896288,
+        "elapsed": 10612,
+        "latency": {
+            "iqm": 20.772,
+            "low": 6.347,
+            "high": 249.179,
+            "jitter": 7.1
+        }
+    },
+    "upload": {
+        "bandwidth": 40528461,
+        "bytes": 552731007,
+        "elapsed": 12608,
+        "latency": {
+            "iqm": 4.399,
+            "low": 3.251,
+            "high": 219.858,
+            "jitter": 4.64
+        }
+    },
+    "isp": "Vivo",
+    "interface": {
+        "internalIp": "172.31.0.2",
+        "name": "eth0",
+        "macAddr": "02:42:AC:1F:00:02",
+        "isVpn": false,
+        "externalIp": "201.27.65.208"
+    },
+    "server": {
+        "id": 51433,
+        "host": "ookla.redebandalarga.net.br",
+        "port": 8080,
+        "name": "Rede Banda Larga",
+        "location": "Carapicuiba",
+        "country": "Brazil",
+        "ip": "138.186.175.254"
+    },
+    "result": {
+        "id": "f358910f-2e4f-4939-8008-4cf0facc5a96",
+        "url": "https:\/\/www.speedtest.net\/result\/c\/f358910f-2e4f-4939-8008-4cf0facc5a96",
+        "persisted": true
+    }
+}
