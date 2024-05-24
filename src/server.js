@@ -6,6 +6,7 @@ const avarages = require('./routes/averagesRoute.js');
 const chartRoute = require('./routes/chartRoute.js');
 const allresults = require('./routes/Allresults.js');
 const {writeToLog} = require('./configs/database.js');
+const listservers = require('./routes/listServers.js');
 const list = require('./routes/ListData.js');
 const morgan = require('morgan');
 const swaggerUI = require('swagger-ui-express');
@@ -32,7 +33,7 @@ app.use(morgan('dev', {
 
 app.use('/api-docs', swaggerUI.serve, swaggerUI.setup(swaggerDocument))
 app.use('/specified', dataRoutes); // Lembrar de Alterar
-app.use('/', chartRoute, list, avarages, allresults);
+app.use('/', chartRoute, list, avarages, allresults, listservers);
 
 
 
